@@ -9,13 +9,13 @@
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Password generator</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <h>Password generator</h>
-        <div class="random-string">
+        <h2>Password generator</h2>
+        <div class="result-string">
             <span id="result"></span>
             <button class="btn" id="clipboard">
                 <i class="far fa-clipboard"></i>
@@ -23,28 +23,27 @@
         </div>
         <div class="preferences">
             <div class="preference">
-                <p>Password lenght</p>
-                <input type="number" id="lenght" min="7" max="20" value="20">
-                <!-- <p><input type="checkbox" name="list[]" value="кто-нибудь"> кто-нибудь</p> -->
+                <label>Password length<label>
+                <input type="number" id="length" min="7" max="20" value="20">
             </div>
 
             <div class="preference">
-                <p>Include uppercase letters</p>
+                <label>Include uppercase letters<label>
                 <input type="checkbox" id="uppercase" checked>
             </div>
 
             <div class="preference">
-                <p>Include lowercase letters</p>
+                <label>Include lowercase letters<label>
                 <input type="checkbox" id="lowercase" checked>
             </div>
 
             <div class="preference">
-                <p>Include numbers</p>
+                <label>Include numbers<label>
                 <input type="checkbox" id="numbers" checked>
             </div>
 
             <div class="preference">
-                <p>Include symbols</p>
+                <label>Include symbols<label>
                 <input type="checkbox" id="symbols" checked>
             </div>
 
