@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <h>Password generator</h>
+        <div class="random-string">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+        <div class="preferences">
+            <div class="preference">
+                <p>Password lenght</p>
+                <input type="number" id="lenght" min="7" max="20" value="20">
+                <!-- <p><input type="checkbox" name="list[]" value="кто-нибудь"> кто-нибудь</p> -->
+            </div>
+
+            <div class="preference">
+                <p>Include uppercase letters</p>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+
+            <div class="preference">
+                <p>Include lowercase letters</p>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+
+            <div class="preference">
+                <p>Include numbers</p>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+
+            <div class="preference">
+                <p>Include symbols</p>
+                <input type="checkbox" id="symbols" checked>
+            </div>
+
+            <button class="generate-btn" id="generate">Generate Password</button>
+        </div>
+    </div>
+
     <script src="index.js"></script>
 </body>
+
 </html>
